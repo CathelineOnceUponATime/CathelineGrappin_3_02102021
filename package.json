@@ -1,0 +1,19 @@
+{
+  "name": "writting-sass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CathelineOnceUponATime/CathelineGrappin_3_02102021.git"
+  },
+  "author": "Catheline GRAPPIN",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CathelineOnceUponATime/CathelineGrappin_3_02102021/issues"
+  },
+  "homepage": "https://github.com/CathelineOnceUponATime/CathelineGrappin_3_02102021#readme"
+}
