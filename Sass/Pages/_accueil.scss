@@ -1,5 +1,40 @@
+body{
+    background-color: $couleur-fond;
+}
 article{
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 6px 6px 6px rgb(224, 224, 224);
+    overflow: hidden;
+    text-align: start;
     img{
         height: 175px;
+    }
+}
+.fonctionnement{
+    background-color: white;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    span{
+        background-color: $couleur-primaire;
+        color: white;
+        border-radius: 50%;
+        padding: 5px;
+    }
+    &__fond{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        align-items: center;
+        box-shadow: 6px 6px 6px rgb(224, 224, 224);
+        background-color: $couleur-fond;
+        border-radius: 15px;
+        &--violet{
+            background-color: $couleur-primaire;
+        }
     }
 }
