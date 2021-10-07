@@ -1,0 +1,11 @@
+.restaurant-nom{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+.img-restaurant{
+    height: 270px;
+    object-fit: cover;
+}

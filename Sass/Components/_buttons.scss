@@ -1,3 +1,7 @@
 button{
-    background-color: linear-gradient($couleur-primaire, $couleur-secondaire);
+    background: linear-gradient($couleur-secondaire, $couleur-primaire);
+    border-radius: 25px;
+    padding: 10px;
+    border: none;
+    color: white;
 }

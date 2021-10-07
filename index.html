@@ -20,10 +20,12 @@
             <a><img src="./images/logo/ohmyfood@2x.svg"></a>
         </header>
         <main>
-            <section>
-                <i class="fas fa-map-marker-alt"></i>
-                <input type="search" name="Ville" placeHolder="Paris, Belleville">
-                <h1> Réserver le menu qui vous convient </h1>
+            <section class="debut">
+                <div class="debut__lieu">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <input type="search" name="Ville" placeHolder="Paris, Belleville">
+                </div>
+                <h1> Réservez le menu qui vous convient </h1>
                 <p> Découvrer des restaurants d'exception, séléctionnés par nos soins. </p>
                 <button> Explorer nos restaurants </button>
             </section>
@@ -53,40 +55,58 @@
             </section>
             <section>
                 <h2> Restaurants </h2>
-                <a href="./Menu_La_Palette_du_gout.html"> 
-                    <article>
-                        <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg">
-                        <span>Nouveau</span>
-                        <h3> La palette du goût </h3>
-                        <p> Ménimontant </p>
-                        <i class="far fa-heart"></i>
-                    </article>
-                </a>
-                <a href="./Menu_La_Note_Enchantee.html"> 
-                    <article>
-                        <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg">
-                        <span>Nouveau</span>
-                        <h3> La note enchantée </h3>
-                        <p> Charonne </p>
-                        <i class="far fa-heart"></i>
-                    </article>
-                </a>
-                <a href="./Menu_A_la_Francaise.html"> 
-                    <article>
-                        <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg">
-                        <h3> À la française </h3>
-                        <p> Cité Rouge </p>
-                        <i class="far fa-heart"></i>
-                    </article>
-                </a>
-                <a href="./Menu_Le_Delice_Des_Sens.html"> 
-                    <article>
-                        <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg">
-                        <h3> Le délice des sens </h3>
-                        <p> Folie-Méricourt </p>
-                        <i class="far fa-heart"></i>
-                    </article>
-                </a>
+                <div class="restaurants">
+                    <a href="./Menu_La_Palette_du_gout.html"> 
+                        <article class="restaurant">
+                            <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg">
+                            <span>Nouveau</span>
+                            <div class="restaurant__detail">
+                                <div class="restaurant__detail__plat">
+                                    <h3> La palette du goût </h3>
+                                    <p> Ménimontant </p>
+                                </div>
+                                <i class="far fa-heart fa-2x"></i>
+                            </div>
+                        </article>
+                    </a>
+                    <a href="./Menu_La_Note_Enchantee.html"> 
+                        <article class="restaurant">
+                            <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg">
+                            <span>Nouveau</span>
+                            <div class="restaurant__detail">
+                                <div class="restaurant__detail__plat">
+                                    <h3> La note enchantée </h3>
+                                    <p> Charonne </p>
+                                </div>
+                                <i class="far fa-heart fa-2x"></i>
+                            </div>
+                        </article>
+                    </a>
+                    <a href="./Menu_A_la_Francaise.html"> 
+                        <article class="restaurant">
+                            <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg">
+                            <div class="restaurant__detail">
+                                <div class="restaurant__detail__plat">
+                                    <h3> À la française </h3>
+                                    <p> Cité Rouge </p>
+                                </div>
+                                <i class="far fa-heart fa-2x"></i>
+                            </div>
+                        </article>
+                    </a>
+                    <a href="./Menu_Le_Delice_Des_Sens.html"> 
+                        <article class="restaurant">
+                            <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg">
+                            <div class="restaurant__detail">
+                                <div class="restaurant__detail__plat">
+                                    <h3> Le délice des sens </h3>
+                                    <p> Folie-Méricourt </p>
+                                </div>
+                                <i class="far fa-heart fa-2x"></i>
+                            </div>
+                        </article>
+                    </a>
+                </div>
             </section>
             
         </main>
@@ -105,7 +125,9 @@
                     <a><p> Mentions légales </p></a>
                 </li>
                 <li>
-                    <a href="mailto:Catheline-27@live.fr?subject=OhMyFood Demande de Contact"><p> Contact </p></a>
+                    <a href="mailto:Catheline-27@live.fr?subject=OhMyFood Demande de Contact">
+                        <p> Contact </p>
+                    </a>
                 </li>
             </ul>
         </footer>

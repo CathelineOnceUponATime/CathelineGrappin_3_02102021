@@ -1,14 +1,51 @@
-body{
-    background-color: $couleur-fond;
+h1, h2, h3{
+    font-family: 'Shrikhand', 'sans serif';
 }
-article{
+
+body{
+    font-family: 'Roboto', 'Comic sans ms';
+    background-color: $couleur-fond;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+.debut{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    &__lieu{
+        flex-direction: row;
+    }
+}
+.restaurant{
+    display : flex;
+    flex-direction: column;
     background-color: white;
     border-radius: 20px;
     box-shadow: 6px 6px 6px rgb(224, 224, 224);
     overflow: hidden;
     text-align: start;
+    margin-bottom: 20px;
+    &__detail{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-right: 50px;
+        margin-bottom: 25px;
+        h3, p{
+            margin: 0;
+        }
+        &__plat{
+            display: flex;
+            flex-direction: column;
+        }
+    }
     img{
         height: 175px;
+        object-fit: cover;
     }
 }
 .fonctionnement{
@@ -34,7 +71,7 @@ article{
         background-color: $couleur-fond;
         border-radius: 15px;
         &--violet{
-            background-color: $couleur-primaire;
+            background-color: lighten($couleur-primaire,30%);
         }
     }
 }
