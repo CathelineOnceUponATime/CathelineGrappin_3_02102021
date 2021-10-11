@@ -3,4 +3,11 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 10px;
+}
+.fa-arrow-left{
+    margin-left: 20px;
+}
+.invisible{
+    color: $couleur-fond;
 }

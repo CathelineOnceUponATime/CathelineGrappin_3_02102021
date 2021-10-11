@@ -10,6 +10,9 @@ body{
 a{
     text-decoration: none;
 }
+.les-restaurants{
+    margin: 0px 10px;
+}
 .debut{
     display: flex;
     flex-direction: column;
@@ -17,6 +20,15 @@ a{
     text-align: center;
     &__lieu{
         flex-direction: row;
+        width: 100%;
+        box-shadow: 0px -1px 0px 2px $couleur-fond-lieu-bordure;
+        background-color: $couleur-fond-lieu;
+        input{
+            background-color: inherit;
+            border: none;
+            font-weight: bolder;
+            padding: 15px;
+        }
     }
 }
 .restaurant{
@@ -24,7 +36,7 @@ a{
     flex-direction: column;
     background-color: white;
     border-radius: 20px;
-    box-shadow: 6px 6px 6px rgb(224, 224, 224);
+    box-shadow: 6px 6px 6px $couleur-fond-bordure;
     overflow: hidden;
     text-align: start;
     margin-bottom: 20px;
@@ -50,28 +62,40 @@ a{
 }
 .fonctionnement{
     background-color: white;
+    padding-bottom: 30px;
+    &--menu{
+        margin: 0px 10px;
+    }
 }
 .menu{
     display: flex;
     flex-direction: row;
     text-align: center;
     align-items: center;
+    margin-bottom: 20px;
     span{
         background-color: $couleur-primaire;
         color: white;
         border-radius: 50%;
-        padding: 5px;
+        padding: 1px 5px;
     }
     &__fond{
         display: flex;
         flex-direction: row;
         text-align: center;
         align-items: center;
-        box-shadow: 6px 6px 6px rgb(224, 224, 224);
+        box-shadow: 6px 6px 6px $couleur-fond-bordure;
         background-color: $couleur-fond;
         border-radius: 15px;
+        width: 100%;
+        .fas{
+            margin: 0px 20px;
+        }
         &--violet{
             background-color: lighten($couleur-primaire,30%);
         }
     }
+}
+.violet{
+    color: $couleur-primaire;
 }

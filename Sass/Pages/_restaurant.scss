@@ -1,11 +1,41 @@
-.restaurant-nom{
+.R-restaurant-nom{
     display: flex;
     flex-direction: row;
     text-align: center;
     align-items: center;
     justify-content: space-between;
+    border-radius: 150px;
+    background-color: $couleur-fond;
+    position: relative;
+    top: -45px;
 }
-.img-restaurant{
+.R-img-restaurant{
     height: 270px;
+    width: 100%;
     object-fit: cover;
+}
+article{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 6px 6px 6px $couleur-fond-bordure;
+    background-color: white;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    padding-top: 5px;
+    h3, p{
+        margin: 0px 0px 10px 10px;
+    }
+    .R-detail-menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+.R-titre{
+    text-transform: uppercase;
+    border-bottom: $couleur-tertiaire 3px solid;
+    width: 20%;
+}
+.R-sections{
+    margin: 0px 10px;
 }

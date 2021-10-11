@@ -1,7 +1,11 @@
 button{
     background: linear-gradient($couleur-secondaire, $couleur-primaire);
     border-radius: 25px;
-    padding: 10px;
+    padding: 15px;
     border: none;
     color: white;
+}
+.R-commander{
+    padding: 15px 30px;
+    margin: 30px 0px 50px 35%;
 }
