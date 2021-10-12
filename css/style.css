@@ -34,6 +34,11 @@ footer {
   background-color: #353535;
   color: white;
 }
+footer img {
+  filter: invert(100%);
+  width: 40%;
+  margin: 15px 0px;
+}
 
 ul {
   list-style: none;
@@ -100,13 +105,22 @@ a {
   text-align: start;
   margin-bottom: 20px;
 }
+.restaurant span {
+  position: relative;
+  bottom: 160px;
+  left: 275px;
+  width: 17%;
+  padding: 5px;
+  color: #278870;
+  font-weight: bolder;
+  background-color: #99E2D0;
+}
 .restaurant__detail {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin-right: 50px;
-  margin-bottom: 25px;
+  margin: 0px 20px 25px 20px;
 }
 .restaurant__detail h3, .restaurant__detail p {
   margin: 0;
@@ -154,7 +168,7 @@ a {
   width: 100%;
 }
 .menu__fond .fas {
-  margin: 0px 20px;
+  margin: 0px 30px;
 }
 .menu__fond--violet {
   background-color: #e4d5f6;
