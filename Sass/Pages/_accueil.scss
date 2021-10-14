@@ -106,14 +106,14 @@ a{
         .fas{
             margin: 0px 30px;
         }
-        &--violet{
+        &:hover{
             background-color: lighten($couleur-primaire,30%);
+            .icone-violet{
+                color: $couleur-primaire;
+            }
         }
         p{
             font-weight: bolder;
         }
     }
-}
-.violet{
-    color: $couleur-primaire;
 }

@@ -174,15 +174,14 @@ a {
 .menu__fond .fas {
   margin: 0px 30px;
 }
-.menu__fond--violet {
+.menu__fond:hover {
   background-color: #e4d5f6;
+}
+.menu__fond:hover .icone-violet {
+  color: #9356DC;
 }
 .menu__fond p {
   font-weight: bolder;
-}
-
-.violet {
-  color: #9356DC;
 }
 
 .R-haut {
