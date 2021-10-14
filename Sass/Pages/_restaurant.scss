@@ -1,13 +1,24 @@
-.R-restaurant-nom{
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    align-items: center;
-    justify-content: space-between;
-    border-radius: 150px;
-    background-color: $couleur-fond;
+.R-haut{
     position: relative;
-    top: -45px;
+    .R-restaurant-nom{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 150px;
+        background-color: $couleur-fond;
+        position: absolute;
+        top: 225px;
+        width: 100%;
+        h1{
+            font-size: 30px;
+            margin-left: 10px;
+        }
+        .fa-heart{
+            margin-right: 20px;
+        }
+    }
 }
 .R-img-restaurant{
     height: 270px;
@@ -29,12 +40,25 @@ article{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        &--coupe{
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        &--prix{
+            font-weight: bolder;
+            margin-right: 20px;
+        }
     }
 }
 .R-titre{
     text-transform: uppercase;
     border-bottom: $couleur-tertiaire 3px solid;
-    width: 20%;
+    width: 15%;
+    font-weight: normal;
+    &--entrees{
+        margin-top: 40px;
+    }
 }
 .R-sections{
     margin: 0px 10px;

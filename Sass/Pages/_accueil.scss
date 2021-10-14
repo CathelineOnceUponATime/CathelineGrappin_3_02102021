@@ -1,4 +1,4 @@
-h1, h2, h3{
+.Shrikhand{
     font-family: 'Shrikhand', 'sans serif';
 }
 
@@ -40,16 +40,19 @@ a{
     overflow: hidden;
     text-align: start;
     margin-bottom: 20px;
-    span{
+    .restaurant-nouveau{
         position: relative;
-        bottom: 160px;
-        left: 275px;
-        width: 17%;
-        padding: 5px;
-        color: darken($couleur-tertiaire, 40%);
-        font-weight: bolder;
-        background-color: $couleur-tertiaire;
+        span{
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            padding: 5px;
+            color: darken($couleur-tertiaire, 40%);
+            font-weight: bolder;
+            background-color: $couleur-tertiaire;
+        }
     }
+    
     &__detail{
         display: flex;
         flex-direction: row;
@@ -66,6 +69,7 @@ a{
     }
     img{
         height: 175px;
+        width: 100%;
         object-fit: cover;
     }
 }
@@ -104,6 +108,9 @@ a{
         }
         &--violet{
             background-color: lighten($couleur-primaire,30%);
+        }
+        p{
+            font-weight: bolder;
         }
     }
 }
