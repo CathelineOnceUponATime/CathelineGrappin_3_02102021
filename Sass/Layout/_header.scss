@@ -4,6 +4,7 @@ header{
     justify-content: space-between;
     align-items: center;
     padding-bottom: 10px;
+    margin-top: 10px;
 }
 .fa-arrow-left{
     margin-left: 20px;
@@ -11,4 +12,5 @@ header{
 .invisible{
     width: 54px;
     height: 2px;
+    color: $couleur-fond;
 }

@@ -63,3 +63,11 @@ article{
 .R-sections{
     margin: 0px 10px;
 }
+@keyframes apparition{
+    0%      {opacity : 0;}
+    100%    {opacity: 1;}
+}
+.R-sections{
+    opacity: 0;
+    animation: apparition 5s forwards 1s;
+}

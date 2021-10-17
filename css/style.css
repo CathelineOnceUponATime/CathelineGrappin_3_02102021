@@ -19,6 +19,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding-bottom: 10px;
+  margin-top: 10px;
 }
 
 .fa-arrow-left {
@@ -28,6 +29,7 @@ header {
 .invisible {
   width: 54px;
   height: 2px;
+  color: #F6F6F6;
 }
 
 footer {
@@ -184,6 +186,44 @@ a {
   font-weight: bolder;
 }
 
+/*
+.fa-heart{
+    font-weight: normal;
+    background: linear-gradient($couleur-secondaire, $couleur-primaire);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    &:hover{
+        font-weight: bold;
+        cursor: pointer;
+    }
+}
+*/
+input[type=checkbox].heart {
+  display: none;
+}
+
+input[type=checkbox].heart + label::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f004";
+  font-size: 2em;
+  margin-right: 20px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(0);
+  opacity: 0.5;
+  font-weight: normal;
+  transition: all 5s;
+}
+
+input[type=checkbox].heart:checked + label::before {
+  content: "\f004";
+  font-weight: bold;
+  transform: scale(1);
+  opacity: 1;
+  transition: all 3s;
+}
+
 .R-haut {
   position: relative;
 }
@@ -252,6 +292,19 @@ article .R-detail-menu--prix {
 
 .R-sections {
   margin: 0px 10px;
+}
+
+@keyframes apparition {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.R-sections {
+  opacity: 0;
+  animation: apparition 5s forwards 1s;
 }
 
 /*# sourceMappingURL=style.css.map */
