@@ -67,6 +67,10 @@ article{
     0%      {opacity : 0;}
     100%    {opacity: 1;}
 }
+@keyframes anim-rotation{
+    0%      {rotate: 90deg;}
+    100%    {rotate: 180deg;}
+}
 .R-sections{
     opacity: 0;
     animation: apparition 5s forwards 1s;
@@ -86,6 +90,9 @@ article{
         }
         .R-detail-coche{
             display: flex;
+            .fa-check{
+                animation: anim-rotation 5s;
+            }
         }
     }
 }
@@ -93,10 +100,11 @@ article{
     display: none;
     background-color: $couleur-tertiaire;
     border-radius: 0px 10px 10px 0px;
-    padding: 23px;
+    padding: 19px;
     .fa-check{
         background-color: white;
         color: $couleur-tertiaire;
         border-radius: 50%;
+        padding: 4px;
     }
 }

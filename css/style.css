@@ -302,6 +302,14 @@ article .R-detail-menu--prix {
     opacity: 1;
   }
 }
+@keyframes anim-rotation {
+  0% {
+    rotate: 90deg;
+  }
+  100% {
+    rotate: 180deg;
+  }
+}
 .R-sections {
   opacity: 0;
   animation: apparition 5s forwards 1s;
@@ -323,17 +331,22 @@ article .R-detail-menu--prix {
 .R-article:hover .R-detail-coche {
   display: flex;
 }
+.R-article:hover .R-detail-coche .fa-check {
+  color: red;
+  animation: anim-rotation 5s;
+}
 
 .R-detail-coche {
   display: none;
   background-color: #99E2D0;
   border-radius: 0px 10px 10px 0px;
-  padding: 23px;
+  padding: 19px;
 }
 .R-detail-coche .fa-check {
   background-color: white;
   color: #99E2D0;
   border-radius: 50%;
+  padding: 4px;
 }
 
 /*# sourceMappingURL=style.css.map */
