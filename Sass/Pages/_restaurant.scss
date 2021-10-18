@@ -71,3 +71,32 @@ article{
     opacity: 0;
     animation: apparition 5s forwards 1s;
 }
+.R-article{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0px;
+    .R-detail{
+        width: 100%;
+    }
+    &:hover{
+        .R-detail{
+            width: 80%;
+        }
+        .R-detail-coche{
+            display: flex;
+        }
+    }
+}
+.R-detail-coche{
+    display: none;
+    background-color: $couleur-tertiaire;
+    border-radius: 0px 10px 10px 0px;
+    padding: 23px;
+    .fa-check{
+        background-color: white;
+        color: $couleur-tertiaire;
+        border-radius: 50%;
+    }
+}

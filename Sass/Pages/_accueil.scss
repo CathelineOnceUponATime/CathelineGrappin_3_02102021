@@ -130,10 +130,10 @@ a{
 }
 */
 
-input[type="checkbox"].heart{
+.heart{
     display: none;
 }
-input[type="checkbox"].heart + label::before {
+.heart + label::before {
     font-family: "Font Awesome 5 Free";
     content: '\f004';
     font-size: 2em;  
@@ -146,7 +146,7 @@ input[type="checkbox"].heart + label::before {
     font-weight: normal;
     transition: all 5s;
   }
-  input[type="checkbox"].heart:checked + label::before {
+ .heart:checked + label::before {
     content:'\f004';
     font-weight: bold;
     transform: scale(1);
