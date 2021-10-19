@@ -61,6 +61,45 @@ ul li .fas {
   margin-right: 5px;
 }
 
+@media (min-width: 700px) {
+  .restaurants {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .les-menus {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .les-menus .menu {
+    width: 30%;
+  }
+  .les-menus .menu span {
+    position: relative;
+    left: 10px;
+  }
+
+  .R-articles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .R-articles .R-article {
+    width: 30%;
+  }
+}
 .Shrikhand {
   font-family: "Shrikhand", "sans serif";
 }
@@ -224,6 +263,69 @@ a {
   transition: all 3s;
 }
 
+@keyframes load-spinner {
+  0% {
+    transform: translateX(0);
+    transform: scale(0.3);
+    filter: blur(3px);
+  }
+  25% {
+    transform: scale(0.6);
+    filter: blur(2px);
+  }
+  75% {
+    filter: blur(1px);
+    transform: scale(0.8);
+  }
+  100% {
+    filter: blur(0px);
+    transform: scale(1);
+    transform: translateX(-9999px);
+  }
+}
+@keyframes apres-spinner {
+  0% {
+    transform: translateX(-9999px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.apres-spinner {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  animation: apres-spinner 0ms 4.5s both;
+}
+
+.spinner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 900px;
+}
+.spinner div {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 20px;
+  filter: blur(3px);
+  animation: load-spinner 5s both;
+}
+.spinner--violet {
+  background-color: #9356DC;
+}
+.spinner--rose {
+  background-color: #FF79DA;
+}
+.spinner--vert {
+  background-color: #99E2D0;
+}
+.spinner--bleu {
+  background-color: #38c1fc;
+}
+
 .R-haut {
   position: relative;
 }
@@ -332,7 +434,6 @@ article .R-detail-menu--prix {
   display: flex;
 }
 .R-article:hover .R-detail-coche .fa-check {
-  color: red;
   animation: anim-rotation 5s;
 }
 

@@ -1,0 +1,38 @@
+@media (min-width: 700px)
+{
+    .restaurants{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .les-menus{
+        display: flex;
+        flex-direction: row;   
+        justify-content: space-around; 
+        width: 100%;
+        .menu{
+            width: 30%;
+            span{
+                position: relative;
+                left: 10px;
+            }
+        }
+    }
+    .R-articles{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 100%;
+        .R-article{
+            width: 30%;
+        }
+    }
+    
+}
