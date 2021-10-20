@@ -1,4 +1,4 @@
-@media (min-width: 700px)
+@media (min-width: 576px)
 {
     .restaurants{
         display: flex;
@@ -11,6 +11,36 @@
         flex-direction: row;
         justify-content: space-between;
     }
+    .heart + label {
+        margin-right: -20px;
+    }
+    .les-restaurants{
+        a{
+            width: 45%;
+            margin: 10px;
+        }
+    }
+    .R-ensemble-sections{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        .R-articles{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            width: 100%;
+            
+        }
+        .R-titre{
+            margin-top: 40px;
+        }
+    }
+    
+    
+}
+@media (min-width: 992px){
+    
     .les-menus{
         display: flex;
         flex-direction: row;   
@@ -24,18 +54,10 @@
             }
         }
     }
-    .R-articles{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        width: 100%;
-        .R-article{
-            width: 30%;
+    .les-restaurants{
+        a{
+            width: 23%;
         }
-    }
-    .heart + label {
-        margin-right: -20px;
     }
     
 }

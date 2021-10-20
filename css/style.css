@@ -7,10 +7,17 @@ button {
   border: none;
   color: white;
 }
+button:hover {
+  filter: brightness(115%);
+  box-shadow: 6px 5px 20px #FF79DA;
+}
 
 .R-commander {
+  display: block;
   padding: 15px 30px;
-  margin: 30px 0px 50px 35%;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 50px;
 }
 
 header {
@@ -61,7 +68,7 @@ ul li .fas {
   margin-right: 5px;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 576px) {
   .restaurants {
     display: flex;
     flex-direction: row;
@@ -75,6 +82,32 @@ ul li .fas {
     justify-content: space-between;
   }
 
+  .heart + label {
+    margin-right: -20px;
+  }
+
+  .les-restaurants a {
+    width: 45%;
+    margin: 10px;
+  }
+
+  .R-ensemble-sections {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .R-ensemble-sections .R-articles {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .R-ensemble-sections .R-titre {
+    margin-top: 40px;
+  }
+}
+@media (min-width: 992px) {
   .les-menus {
     display: flex;
     flex-direction: row;
@@ -89,19 +122,8 @@ ul li .fas {
     left: 10px;
   }
 
-  .R-articles {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    width: 100%;
-  }
-  .R-articles .R-article {
-    width: 30%;
-  }
-
-  .heart + label {
-    margin-right: -20px;
+  .les-restaurants a {
+    width: 23%;
   }
 }
 .Shrikhand {
@@ -168,7 +190,7 @@ a {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin: 0px 20px 25px 20px;
+  margin: 10px 20px 25px 20px;
 }
 .restaurant__detail h3, .restaurant__detail p {
   margin: 0;
@@ -420,6 +442,15 @@ article .R-detail-menu--prix {
   opacity: 0;
   animation: apparition 5s forwards 1s;
 }
+.R-sections--entrees {
+  animation-delay: 0.5s;
+}
+.R-sections--plats {
+  animation-delay: 1s;
+}
+.R-sections--desserts {
+  animation-delay: 1.5s;
+}
 
 .R-article {
   display: flex;
@@ -458,7 +489,6 @@ article .R-detail-menu--prix {
   transition: width 0.5s ease-in-out;
 }
 .R-detail-coche .fa-check {
-  transform: rotate(180deg);
   background-color: white;
   color: #99E2D0;
   border-radius: 50%;

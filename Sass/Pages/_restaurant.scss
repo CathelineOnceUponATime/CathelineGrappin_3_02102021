@@ -72,6 +72,15 @@ article{
     100%    {transform: rotate(360deg);}
 }
 .R-sections{
+    &--entrees{
+        animation-delay: 0.5s;
+    }
+    &--plats{
+        animation-delay: 1s;
+    }
+    &--desserts{
+        animation-delay: 1.5s;
+    }
     opacity: 0;
     animation: apparition 5s forwards 1s;
 }
@@ -112,7 +121,6 @@ article{
     overflow: hidden;
     transition: width 0.5s ease-in-out;
     .fa-check{
-        transform: rotate(180deg);
         background-color: white;
         color: $couleur-tertiaire;
         border-radius: 50%;
