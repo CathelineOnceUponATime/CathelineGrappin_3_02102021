@@ -20,21 +20,17 @@
             margin: 10px;
         }
     }
-    .R-ensemble-sections{
+    .R-articles{
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
-        .R-articles{
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            width: 100%;
-            
+        flex-wrap: wrap;
+        .R-article{
+            width: 45%;
+            margin: 10px;
         }
-        .R-titre{
-            margin-top: 40px;
-        }
+    }
+    .R-titre{
+        width: 7%;
     }
     
     
@@ -52,6 +48,29 @@
                 position: relative;
                 left: 10px;
             }
+        }
+    }
+    .R-ensemble-sections{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        .R-sections{
+            width: 100%;
+        }
+        .R-articles{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            width: 100%;
+            .R-article{
+                width: 100%;
+                margin: 10px 0px;
+            }
+        }
+        .R-titre{
+            margin-top: 40px;
+            width: 15%;
         }
     }
     .les-restaurants{
