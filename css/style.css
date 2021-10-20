@@ -424,6 +424,15 @@ article .R-detail-menu--prix {
     transform: translate(0px);
   }
 }
+@keyframes anim-translate-retour {
+  0% {
+    transform: translate(0px);
+  }
+  100% {
+    transform: translate(30px);
+    display: none;
+  }
+}
 .R-sections {
   opacity: 0;
   animation: apparition 5s forwards 1s;
@@ -435,8 +444,6 @@ article .R-detail-menu--prix {
   justify-content: space-between;
   align-items: center;
   padding-top: 0px;
-}
-.R-article .R-article-detail {
   position: relative;
   width: 100%;
 }
@@ -447,8 +454,7 @@ article .R-detail-menu--prix {
   width: 80%;
 }
 .R-article:hover .R-detail-coche {
-  display: flex;
-  animation: anim-translate 1s ease both;
+  width: 20%;
 }
 .R-article:hover .R-detail-coche .fa-check {
   animation-name: anim-rotation;
@@ -458,13 +464,15 @@ article .R-detail-menu--prix {
 }
 
 .R-detail-coche {
-  display: none;
-  position: absolute;
-  right: 0px;
-  top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 0%;
+  height: 100%;
   background-color: #99E2D0;
   border-radius: 0px 10px 10px 0px;
-  padding: 19px;
+  overflow: hidden;
+  transition: width 0.5s ease-in-out;
 }
 .R-detail-coche .fa-check {
   transform: rotate(180deg);
