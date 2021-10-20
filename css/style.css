@@ -303,7 +303,7 @@ a {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  height: 900px;
+  height: 100vh;
 }
 .spinner div {
   width: 30px;
