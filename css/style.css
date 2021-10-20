@@ -416,23 +416,6 @@ article .R-detail-menu--prix {
     transform: rotate(360deg);
   }
 }
-@keyframes anim-translate {
-  0% {
-    transform: translate(30px);
-  }
-  100% {
-    transform: translate(0px);
-  }
-}
-@keyframes anim-translate-retour {
-  0% {
-    transform: translate(0px);
-  }
-  100% {
-    transform: translate(30px);
-    display: none;
-  }
-}
 .R-sections {
   opacity: 0;
   animation: apparition 5s forwards 1s;

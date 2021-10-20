@@ -71,15 +71,6 @@ article{
     0%      {transform: rotate(90deg);}
     100%    {transform: rotate(360deg);}
 }
-@keyframes anim-translate{
-    0%      { transform: translate(30px);}
-    100%    { transform: translate(0px);}
-}
-@keyframes anim-translate-retour{
-    0%      { transform: translate(0px);}
-    100%    { transform: translate(30px);
-              display: none;}
-}
 .R-sections{
     opacity: 0;
     animation: apparition 5s forwards 1s;
@@ -101,7 +92,6 @@ article{
         }
         .R-detail-coche{
             width: 20%;
-            
             .fa-check{
                 animation-name: anim-rotation;
                 animation-delay: 0s;
