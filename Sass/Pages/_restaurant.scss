@@ -68,8 +68,12 @@ article{
     100%    {opacity: 1;}
 }
 @keyframes anim-rotation{
-    0%      {rotate: 90deg;}
-    100%    {rotate: 180deg;}
+    0%      {transform: rotate(90deg);}
+    100%    {transform: rotate(360deg);}
+}
+@keyframes anim-translate{
+    0%      { transform: translate(30px);}
+    100%    { transform: translate(0px);}
 }
 .R-sections{
     opacity: 0;
@@ -81,6 +85,10 @@ article{
     justify-content: space-between;
     align-items: center;
     padding-top: 0px;
+    .R-article-detail{
+        position: relative;
+        width: 100%;
+    }
     .R-detail{
         width: 100%;
     }
@@ -90,18 +98,26 @@ article{
         }
         .R-detail-coche{
             display: flex;
+            animation: anim-translate 1s ease both;
             .fa-check{
-                animation: anim-rotation 5s;
+                animation-name: anim-rotation;
+                animation-delay: 0s;
+                animation-duration: 0.5s;
+                animation-fill-mode: forwards;
             }
         }
     }
 }
 .R-detail-coche{
     display: none;
+    position: absolute;
+    right: 0px;
+    top: 0px;
     background-color: $couleur-tertiaire;
     border-radius: 0px 10px 10px 0px;
     padding: 19px;
     .fa-check{
+        transform: rotate(180deg);
         background-color: white;
         color: $couleur-tertiaire;
         border-radius: 50%;

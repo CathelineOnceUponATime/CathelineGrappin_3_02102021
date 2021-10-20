@@ -274,12 +274,12 @@ a {
     filter: blur(3px);
   }
   25% {
-    transform: scale(0.6);
+    transform: scale(1);
     filter: blur(2px);
   }
   75% {
     filter: blur(1px);
-    transform: scale(0.8);
+    transform: scale(0.6);
   }
   100% {
     filter: blur(0px);
@@ -410,10 +410,18 @@ article .R-detail-menu--prix {
 }
 @keyframes anim-rotation {
   0% {
-    rotate: 90deg;
+    transform: rotate(90deg);
   }
   100% {
-    rotate: 180deg;
+    transform: rotate(360deg);
+  }
+}
+@keyframes anim-translate {
+  0% {
+    transform: translate(30px);
+  }
+  100% {
+    transform: translate(0px);
   }
 }
 .R-sections {
@@ -428,6 +436,10 @@ article .R-detail-menu--prix {
   align-items: center;
   padding-top: 0px;
 }
+.R-article .R-article-detail {
+  position: relative;
+  width: 100%;
+}
 .R-article .R-detail {
   width: 100%;
 }
@@ -436,18 +448,26 @@ article .R-detail-menu--prix {
 }
 .R-article:hover .R-detail-coche {
   display: flex;
+  animation: anim-translate 1s ease both;
 }
 .R-article:hover .R-detail-coche .fa-check {
-  animation: anim-rotation 5s;
+  animation-name: anim-rotation;
+  animation-delay: 0s;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
 }
 
 .R-detail-coche {
   display: none;
+  position: absolute;
+  right: 0px;
+  top: 0px;
   background-color: #99E2D0;
   border-radius: 0px 10px 10px 0px;
   padding: 19px;
 }
 .R-detail-coche .fa-check {
+  transform: rotate(180deg);
   background-color: white;
   color: #99E2D0;
   border-radius: 50%;
