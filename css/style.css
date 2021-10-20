@@ -99,6 +99,10 @@ ul li .fas {
   .R-articles .R-article {
     width: 30%;
   }
+
+  .heart + label {
+    margin-right: -20px;
+  }
 }
 .Shrikhand {
   font-family: "Shrikhand", "sans serif";

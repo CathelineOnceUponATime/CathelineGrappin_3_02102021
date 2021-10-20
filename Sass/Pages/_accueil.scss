@@ -147,7 +147,7 @@ a{
     transition: all 5s;
   }
  .heart:checked + label::before {
-    content:'\f004';
+    content: '\f004';
     font-weight: bold;
     transform: scale(1);
     opacity: 1;
