@@ -155,22 +155,20 @@ a{
   }
 @keyframes load-spinner {
 	0%{
-        transform: translateX(0);
-		transform: scale(0.3);
+        transform: translateX(0) scale(0.3) translateY(0);
 		filter: blur(3px);
 	}
 	25% {
-		transform: scale(1);
+		transform: scale(1) translateY(-10px);
 		filter: blur(2px);
 	}
 	75% {
 		filter: blur(1px);
-		transform: scale(0.6);
+		transform: scale(0.6) translateY(-20px);
 	}
     100%{
         filter: blur(0px);
-        transform: scale(1);
-        transform: translateX(-9999px);
+        transform: scale(1) translateX(-9999px) translateY(0);
     }
 }
 @keyframes apres-spinner{
@@ -185,32 +183,72 @@ a{
     position: absolute;
     top: 0px;
     width: 100%;
-    animation: apres-spinner 0ms 4.5s both;
+    animation: apres-spinner 0ms 3s both;
 }
 .spinner{
-    display: flex;
-    flex-direction: row;
+    display: block;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    margin: 50%;
+    left: -80px;
+    position: relative;
+    height: 80px;
+    width: 80px;
     div{
+        position: absolute;
         width: 30px;
         height: 30px;
         border-radius: 50%;
         margin: 20px;
         filter: blur(3px);
-        animation: load-spinner 5s both;
+        animation: load-spinner 3s both;
     }
     &--violet{
+        top: 0px;
+        left: 40px;
         background-color: $couleur-primaire;
+        animation-delay: 0.3s;
     }
     &--rose{
+        top: 60px;
+        left: 60px;
         background-color: $couleur-secondaire;
+        animation-delay: 0.5s;
     }
     &--vert{
+        top: 40px;
+        left: 80px;
         background-color: $couleur-tertiaire;
+        animation-delay: 1s;
     }
     &--bleu{
+        top: 20px;
+        left: 60px;
         background-color: rgb(56, 193, 252);
+        animation-delay: 1.5s;
+    }
+    &--vi{
+        top: 80px;
+        left: 40px;
+        background-color: $couleur-primaire;
+        animation-delay: 1.5s;
+    }
+    &--ro{
+        top: 20px;
+        left: 20px;
+        background-color: $couleur-secondaire;
+        animation-delay: 1.5s;
+    }
+    &--ve{
+        top: 40px;
+        left: 0px;
+        background-color: $couleur-tertiaire;
+        animation-delay: 1.5s;
+    }
+    &--bl{
+        top: 60px;
+        left: 20px;
+        background-color: rgb(56, 193, 252);
+        animation-delay: 1.5s;
     }
 }
