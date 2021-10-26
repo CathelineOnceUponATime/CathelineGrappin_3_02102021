@@ -118,23 +118,25 @@ a{
     }
 }
 .bouton__coeur{
+    display: flex;
+    .heart{
+        position: relative;
+        overflow: hidden;
+        color: black;
+        opacity: 1;
+    }
     .heart--rempli{
-        display: none;
+        position: fixed;
+        opacity: 0;
         background: linear-gradient($couleur-secondaire, $couleur-primaire);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
-    .heart{
-        display: flex;
-        color: black;
-    }
     &:hover{
         cursor: pointer;
-        .heart{
-            display: none;
-        }
         .heart--rempli{
-            animation: coeur 3s linear;
+            animation: coeur 3s forwards;
+            opacity: 1;
             
         }
     }

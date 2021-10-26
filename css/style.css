@@ -18,10 +18,12 @@
 }
 @keyframes coeur {
   0% {
-    display: none;
+    transform: scale(0);
+    opacity: 0;
   }
   100% {
-    display: flex;
+    transform: scale(1.1);
+    opacity: 1;
   }
 }
 @keyframes load-spinner {
@@ -243,24 +245,28 @@ a {
   font-weight: bolder;
 }
 
+.bouton__coeur {
+  display: flex;
+}
+.bouton__coeur .heart {
+  position: relative;
+  overflow: hidden;
+  color: black;
+  opacity: 1;
+}
 .bouton__coeur .heart--rempli {
-  display: none;
+  position: fixed;
+  opacity: 0;
   background: linear-gradient(#FF79DA, #9356DC);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.bouton__coeur .heart {
-  display: flex;
-  color: black;
-}
 .bouton__coeur:hover {
   cursor: pointer;
 }
-.bouton__coeur:hover .heart {
-  display: none;
-}
 .bouton__coeur:hover .heart--rempli {
-  animation: coeur 3s linear;
+  animation: coeur 3s forwards;
+  opacity: 1;
 }
 
 .apres-spinner {
