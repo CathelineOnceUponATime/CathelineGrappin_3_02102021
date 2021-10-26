@@ -261,10 +261,10 @@ a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.bouton__coeur:hover {
+.bouton__coeur:active {
   cursor: pointer;
 }
-.bouton__coeur:hover .heart--rempli {
+.bouton__coeur:active .heart--rempli {
   animation: coeur 3s forwards;
   opacity: 1;
 }
