@@ -24,6 +24,8 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: space-between;
+        margin-right: 20px;
         .R-article{
             width: 45%;
             margin: 10px;
@@ -32,15 +34,11 @@
     .R-titre{
         width: 7%;
     }
-    
-    
-}
-@media (min-width: 992px){
-    
     .les-menus{
         display: flex;
         flex-direction: row;   
         justify-content: space-around; 
+        flex-wrap: wrap;
         width: 100%;
         .menu{
             width: 30%;
@@ -50,6 +48,12 @@
             }
         }
     }
+    
+    
+}
+@media (min-width: 1190px){
+    
+    
     .R-ensemble-sections{
         display: flex;
         flex-direction: row;

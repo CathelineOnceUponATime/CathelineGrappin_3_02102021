@@ -488,7 +488,7 @@ article .R-detail-menu--prix {
 }
 .R-article:hover .R-detail-coche .fa-check {
   animation-name: anim-rotation;
-  animation-delay: 0s;
+  animation-delay: 0.1s;
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
 }
@@ -538,6 +538,8 @@ article .R-detail-menu--prix {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 20px;
   }
   .R-articles .R-article {
     width: 45%;
@@ -547,12 +549,12 @@ article .R-detail-menu--prix {
   .R-titre {
     width: 7%;
   }
-}
-@media (min-width: 992px) {
+
   .les-menus {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
     width: 100%;
   }
   .les-menus .menu {
@@ -562,7 +564,8 @@ article .R-detail-menu--prix {
     position: relative;
     left: 10px;
   }
-
+}
+@media (min-width: 1190px) {
   .R-ensemble-sections {
     display: flex;
     flex-direction: row;
