@@ -205,6 +205,17 @@ a {
     }
 }
 */
+@keyframes coeur {
+  0% {
+    opacity: 0.3;
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+    font-weight: bold;
+  }
+}
 .heart {
   display: none;
 }
@@ -214,21 +225,19 @@ a {
   content: "\f004";
   font-size: 2em;
   margin-right: 20px;
-  background: linear-gradient(#FF79DA, #9356DC);
+  background: black;
+  font-weight: normal;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  transform: scale(0);
-  opacity: 0.5;
-  font-weight: normal;
-  transition: all 5s;
 }
 
 .heart:checked + label::before {
   content: "\f004";
+  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-weight: bold;
-  transform: scale(1);
-  opacity: 1;
-  transition: all 3s;
+  animation: coeur 3s;
 }
 
 @keyframes load-spinner {
@@ -237,12 +246,12 @@ a {
     filter: blur(3px);
   }
   20%, 60% {
-    transform: scale(1) translateY(-10px);
+    transform: rotate(0deg) scale(1) translateY(-10px);
     filter: blur(0px);
   }
   40%, 80% {
     filter: blur(2px);
-    transform: scale(0.5) translateY(-20px);
+    transform: rotate(360deg) scale(0.5) translateY(-20px);
   }
   100% {
     filter: blur(0px);
@@ -270,6 +279,7 @@ a {
   justify-content: center;
   margin: 50%;
   left: -80px;
+  top: -80px;
   position: relative;
   height: 80px;
   width: 80px;
@@ -280,49 +290,50 @@ a {
   height: 25px;
   border-radius: 50%;
   margin: 20px;
+  transform: rotate(10deg);
   animation: load-spinner 3s both;
 }
 .spinner--violet {
   top: 0px;
   left: 40px;
   background-color: #9356DC;
-  animation-delay: 0.3s;
+  animation-delay: -0.5s;
 }
 .spinner--rose {
   top: 60px;
   left: 60px;
   background-color: #FF79DA;
-  animation-delay: 0.5s;
+  animation-delay: -1s;
 }
 .spinner--vert {
   top: 40px;
   left: 80px;
   background-color: #99E2D0;
-  animation-delay: 1s;
+  animation-delay: -1.5s;
 }
 .spinner--bleu {
   top: 20px;
   left: 60px;
   background-color: #38c1fc;
-  animation-delay: 1.5s;
+  animation-delay: -2s;
 }
 .spinner--vi {
   top: 80px;
   left: 40px;
   background-color: #9356DC;
-  animation-delay: 1.5s;
+  animation-delay: 2.5;
 }
 .spinner--ro {
   top: 20px;
   left: 20px;
   background-color: #FF79DA;
-  animation-delay: 1.5s;
+  animation-delay: 2.7s;
 }
 .spinner--ve {
   top: 40px;
   left: 0px;
   background-color: #99E2D0;
-  animation-delay: 1.5s;
+  animation-delay: 2s;
 }
 .spinner--bl {
   top: 60px;

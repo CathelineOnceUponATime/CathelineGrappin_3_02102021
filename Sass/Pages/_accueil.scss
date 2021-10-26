@@ -129,7 +129,17 @@ a{
     }
 }
 */
-
+@keyframes coeur{
+    0%{
+        opacity: 0.3;
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+        font-weight: bold;
+    }
+}
 .heart{
     display: none;
 }
@@ -138,37 +148,35 @@ a{
     content: '\f004';
     font-size: 2em;  
     margin-right: 20px;
-    background: linear-gradient($couleur-secondaire, $couleur-primaire);
+    background: black;
+    font-weight: normal;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    transform: scale(0);
-    opacity: 0.5;
-    font-weight: normal;
-    transition: all 5s;
   }
  .heart:checked + label::before {
     content: '\f004';
+    background: linear-gradient($couleur-secondaire, $couleur-primaire);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-weight: bold;
-    transform: scale(1);
-    opacity: 1;
-    transition: all 3s;
+    animation: coeur 3s;
   }
 @keyframes load-spinner {
 	0%{
-        transform: translateX(0) scale(0.3) translateY(0);
+        transform:  translateX(0) scale(0.3) translateY(0);
 		filter: blur(3px);
 	}
 	20%, 60%{
-		transform: scale(1) translateY(-10px);
+		transform: rotate(0deg) scale(1) translateY(-10px);
 		filter: blur(0px);
 	}
 	40%, 80%{
 		filter: blur(2px);
-		transform: scale(0.5) translateY(-20px);
+		transform: rotate(360deg) scale(0.5) translateY(-20px);
 	}
     100%{
         filter: blur(0px);
-        transform: scale(1) translateX(-9999px) translateY(0);
+        transform:  scale(1) translateX(-9999px) translateY(0);
     }
 }
 @keyframes apres-spinner{
@@ -191,6 +199,7 @@ a{
     justify-content: center;
     margin: 50%;
     left: -80px;
+    top: -80px;
     position: relative;
     height: 80px;
     width: 80px;
@@ -200,49 +209,50 @@ a{
         height: 25px;
         border-radius: 50%;
         margin: 20px;
+        transform: rotate(10deg);
         animation: load-spinner 3s both;
     }
     &--violet{
         top: 0px;
         left: 40px;
         background-color: $couleur-primaire;
-        animation-delay: 0.3s;
+        animation-delay: -0.5s;
     }
     &--rose{
         top: 60px;
         left: 60px;
         background-color: $couleur-secondaire;
-        animation-delay: 0.5s;
+        animation-delay: -1s;
     }
     &--vert{
         top: 40px;
         left: 80px;
         background-color: $couleur-tertiaire;
-        animation-delay: 1s;
+        animation-delay: -1.5s;
     }
     &--bleu{
         top: 20px;
         left: 60px;
         background-color: rgb(56, 193, 252);
-        animation-delay: 1.5s;
+        animation-delay: -2s;
     }
     &--vi{
         top: 80px;
         left: 40px;
         background-color: $couleur-primaire;
-        animation-delay: 1.5s;
+        animation-delay: 2.5;
     }
     &--ro{
         top: 20px;
         left: 20px;
         background-color: $couleur-secondaire;
-        animation-delay: 1.5s;
+        animation-delay: 2.7s;
     }
     &--ve{
         top: 40px;
         left: 0px;
         background-color: $couleur-tertiaire;
-        animation-delay: 1.5s;
+        animation-delay: 2s;
     }
     &--bl{
         top: 60px;
