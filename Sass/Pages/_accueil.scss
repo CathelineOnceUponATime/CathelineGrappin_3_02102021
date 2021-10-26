@@ -132,7 +132,7 @@ a{
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
-    &:active{
+    &:hover{
         cursor: pointer;
         .heart--rempli{
             animation: coeur 3s forwards;
