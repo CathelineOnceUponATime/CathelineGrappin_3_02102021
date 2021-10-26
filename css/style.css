@@ -1,5 +1,55 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap");
+@keyframes apparition {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes anim-rotation {
+  0% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes coeur {
+  0% {
+    display: none;
+  }
+  100% {
+    display: flex;
+  }
+}
+@keyframes load-spinner {
+  0% {
+    transform: translateX(0) scale(0.3) translateY(0);
+    filter: blur(3px);
+  }
+  20%, 60% {
+    transform: rotate(0deg) scale(1) translateY(-10px);
+    filter: blur(0px);
+  }
+  40%, 80% {
+    filter: blur(2px);
+    transform: rotate(360deg) scale(0.5) translateY(-20px);
+  }
+  100% {
+    filter: blur(0px);
+    transform: scale(1) translateX(-9999px) translateY(0);
+  }
+}
+@keyframes apres-spinner {
+  0% {
+    transform: translateX(-9999px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 button {
   background: linear-gradient(#FF79DA, #9356DC);
   border-radius: 25px;
@@ -193,79 +243,26 @@ a {
   font-weight: bolder;
 }
 
-/*
-.fa-heart{
-    font-weight: normal;
-    background: linear-gradient($couleur-secondaire, $couleur-primaire);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    &:hover{
-        font-weight: bold;
-        cursor: pointer;
-    }
-}
-*/
-@keyframes coeur {
-  0% {
-    opacity: 0.3;
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(1);
-    opacity: 1;
-    font-weight: bold;
-  }
-}
-.heart {
+.bouton__coeur .heart--rempli {
   display: none;
-}
-
-.heart + label::before {
-  font-family: "Font Awesome 5 Free";
-  content: "\f004";
-  font-size: 2em;
-  margin-right: 20px;
-  background: black;
-  font-weight: normal;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.heart:checked + label::before {
-  content: "\f004";
   background: linear-gradient(#FF79DA, #9356DC);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-weight: bold;
-  animation: coeur 3s;
+}
+.bouton__coeur .heart {
+  display: flex;
+  color: black;
+}
+.bouton__coeur:hover {
+  cursor: pointer;
+}
+.bouton__coeur:hover .heart {
+  display: none;
+}
+.bouton__coeur:hover .heart--rempli {
+  animation: coeur 3s linear;
 }
 
-@keyframes load-spinner {
-  0% {
-    transform: translateX(0) scale(0.3) translateY(0);
-    filter: blur(3px);
-  }
-  20%, 60% {
-    transform: rotate(0deg) scale(1) translateY(-10px);
-    filter: blur(0px);
-  }
-  40%, 80% {
-    filter: blur(2px);
-    transform: rotate(360deg) scale(0.5) translateY(-20px);
-  }
-  100% {
-    filter: blur(0px);
-    transform: scale(1) translateX(-9999px) translateY(0);
-  }
-}
-@keyframes apres-spinner {
-  0% {
-    transform: translateX(-9999px);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
 .apres-spinner {
   position: absolute;
   top: 0px;
@@ -284,62 +281,101 @@ a {
   height: 80px;
   width: 80px;
 }
-.spinner div {
+.spinner--violet {
   position: absolute;
   width: 25px;
   height: 25px;
   border-radius: 50%;
   margin: 20px;
-  transform: rotate(10deg);
   animation: load-spinner 3s both;
-}
-.spinner--violet {
+  animation-delay: 0.1s;
   top: 0px;
   left: 40px;
   background-color: #9356DC;
-  animation-delay: -0.5s;
 }
 .spinner--rose {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin: 20px;
+  animation: load-spinner 3s both;
+  animation-delay: 0.2s;
   top: 60px;
   left: 60px;
   background-color: #FF79DA;
-  animation-delay: -1s;
 }
 .spinner--vert {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin: 20px;
+  animation: load-spinner 3s both;
+  animation-delay: 0.3s;
   top: 40px;
   left: 80px;
   background-color: #99E2D0;
-  animation-delay: -1.5s;
 }
 .spinner--bleu {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin: 20px;
+  animation: load-spinner 3s both;
+  animation-delay: 0.4s;
   top: 20px;
   left: 60px;
   background-color: #38c1fc;
-  animation-delay: -2s;
 }
 .spinner--vi {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin: 20px;
+  animation: load-spinner 3s both;
+  animation-delay: 0.1s;
   top: 80px;
   left: 40px;
   background-color: #9356DC;
-  animation-delay: 2.5;
 }
 .spinner--ro {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin: 20px;
+  animation: load-spinner 3s both;
+  animation-delay: 0.2s;
   top: 20px;
   left: 20px;
   background-color: #FF79DA;
-  animation-delay: 2.7s;
 }
 .spinner--ve {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin: 20px;
+  animation: load-spinner 3s both;
+  animation-delay: 0.3s;
   top: 40px;
   left: 0px;
   background-color: #99E2D0;
-  animation-delay: 2s;
 }
 .spinner--bl {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin: 20px;
+  animation: load-spinner 3s both;
+  animation-delay: 0.4s;
   top: 60px;
   left: 20px;
   background-color: #38c1fc;
-  animation-delay: 1.5s;
 }
 
 .R-haut {
@@ -412,22 +448,6 @@ article .R-detail-menu--prix {
   margin: 0px 10px;
 }
 
-@keyframes apparition {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes anim-rotation {
-  0% {
-    transform: rotate(90deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 .R-sections {
   opacity: 0;
   animation: apparition 5s forwards 1s;

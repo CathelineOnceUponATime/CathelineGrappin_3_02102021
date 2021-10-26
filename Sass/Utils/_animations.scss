@@ -1,0 +1,46 @@
+@keyframes apparition{
+    0%      {opacity : 0;}
+    100%    {opacity: 1;}
+}
+
+@keyframes anim-rotation{
+    0%      {transform: rotate(90deg);}
+    100%    {transform: rotate(360deg);}
+}
+
+@keyframes coeur{
+    0%{
+        display: none;
+    }
+    100%{
+        display: flex;
+    }
+}
+
+@keyframes load-spinner {
+	0%{
+        transform:  translateX(0) scale(0.3) translateY(0);
+		filter: blur(3px);
+	}
+	20%, 60%{
+		transform: rotate(0deg) scale(1) translateY(-10px);
+		filter: blur(0px);
+	}
+	40%, 80%{
+		filter: blur(2px);
+		transform: rotate(360deg) scale(0.5) translateY(-20px);
+	}
+    100%{
+        filter: blur(0px);
+        transform:  scale(1) translateX(-9999px) translateY(0);
+    }
+}
+
+@keyframes apres-spinner{
+    0%{
+        transform: translateX(-9999px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}

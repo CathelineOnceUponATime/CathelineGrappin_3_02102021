@@ -1,0 +1,12 @@
+@mixin spinner-boule($couleur, $delai, $top, $left){
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin: 20px;
+    animation: load-spinner 3s both;
+    animation-delay: $delai;
+    top: $top;
+    left: $left;
+    background-color: $couleur;
+}

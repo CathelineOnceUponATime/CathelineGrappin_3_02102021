@@ -63,14 +63,6 @@ article{
 .R-sections{
     margin: 0px 10px;
 }
-@keyframes apparition{
-    0%      {opacity : 0;}
-    100%    {opacity: 1;}
-}
-@keyframes anim-rotation{
-    0%      {transform: rotate(90deg);}
-    100%    {transform: rotate(360deg);}
-}
 .R-sections{
     &--entrees{
         animation-delay: 0.5s;
