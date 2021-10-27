@@ -132,6 +132,10 @@ body {
 
 a {
   text-decoration: none;
+  color: black;
+}
+a:visited {
+  color: black;
 }
 
 .les-restaurants {
@@ -266,7 +270,7 @@ a {
   cursor: pointer;
 }
 .bouton__coeur:hover .heart--rempli {
-  animation: coeur 3s forwards;
+  animation: coeur 2s forwards;
   opacity: 1;
 }
 

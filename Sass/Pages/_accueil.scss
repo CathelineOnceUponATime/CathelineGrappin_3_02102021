@@ -9,6 +9,10 @@ body{
 }
 a{
     text-decoration: none;
+    color: black;
+    &:visited{
+        color: black;
+    }
 }
 .les-restaurants{
     margin: 0px 10px;
@@ -136,9 +140,8 @@ a{
     &:hover{
         cursor: pointer;
         .heart--rempli{
-            animation: coeur 3s forwards;
+            animation: coeur 2s forwards;
             opacity: 1;
-            
         }
     }
 }
