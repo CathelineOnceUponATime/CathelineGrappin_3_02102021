@@ -230,6 +230,7 @@ a {
   box-shadow: 6px 6px 6px #E0E0E0;
   background-color: #F6F6F6;
   border-radius: 15px;
+  padding-right: 20px;
   width: 100%;
 }
 .menu__fond .fas {
@@ -556,9 +557,6 @@ article .R-detail-menu--prix {
     justify-content: space-around;
     flex-wrap: wrap;
     width: 100%;
-  }
-  .les-menus .menu {
-    width: 30%;
   }
   .les-menus .menu span {
     position: relative;
