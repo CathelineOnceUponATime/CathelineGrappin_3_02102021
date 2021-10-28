@@ -155,24 +155,24 @@ a{
         @include spinner-boule($couleur-primaire, 0.1s, -40px, 0px);
     }
     &--rose{
-        @include spinner-boule($couleur-secondaire, 0.2s, -20px, -20px);
+        @include spinner-boule($couleur-secondaire, 0.4s, 20px, 20px);
     }
     &--vert{
         @include spinner-boule($couleur-tertiaire, 0.3s, 0px, 40px);
     }
     &--bleu{
-        @include spinner-boule($couleur-bleu-clair, 0.4s, 20px, -20px);
+        @include spinner-boule($couleur-bleu-clair, 0.2s, -20px, 20px);
     }
     &--vi{
-        @include spinner-boule($couleur-primaire, 0.1s, 40px, 0px);
+        @include spinner-boule($couleur-primaire, 0.5s, 40px, 0px);
     }
     &--ro{
-        @include spinner-boule($couleur-secondaire, 0.2s, 20px, 20px);
+        @include spinner-boule($couleur-secondaire, 0.8s, -20px, -20px);
     }
     &--ve{
-        @include spinner-boule($couleur-tertiaire, 0.3s, 0px, -40px);
+        @include spinner-boule($couleur-tertiaire, 0.7s, 0px, -40px);
     }
     &--bl{
-        @include spinner-boule($couleur-bleu-clair, 0.4s, -20px, 20px);
+        @include spinner-boule($couleur-bleu-clair, 0.6s, 20px, -20px);
     }
 }

@@ -27,21 +27,17 @@
   }
 }
 @keyframes load-spinner {
-  0% {
-    transform: translateX(0) scale(0.3) translateY(0);
-    filter: blur(3px);
+  0%, 40%, 80% {
+    transform: translateX(0) scale(0.5);
+    opacity: 0.5;
   }
   20%, 60% {
-    transform: rotate(0deg) scale(1) translateY(-10px);
-    filter: blur(0px);
-  }
-  40%, 80% {
-    filter: blur(2px);
-    transform: rotate(360deg) scale(0.5) translateY(-20px);
+    transform: scale(1) rotateZ(360deg);
+    opacity: 1;
   }
   100% {
-    filter: blur(0px);
-    transform: scale(1) translateX(-9999px) translateY(0);
+    transform: scale(0.5) translateX(-9999px);
+    opacity: 1;
   }
 }
 @keyframes apres-spinner {
@@ -337,9 +333,9 @@ a:visited {
   height: 25px;
   border-radius: 50%;
   animation: load-spinner 3s both;
-  animation-delay: 0.2s;
-  top: -20px;
-  left: -20px;
+  animation-delay: 0.4s;
+  top: 20px;
+  left: 20px;
   background-color: #FF79DA;
 }
 .spinner--vert {
@@ -359,9 +355,9 @@ a:visited {
   height: 25px;
   border-radius: 50%;
   animation: load-spinner 3s both;
-  animation-delay: 0.4s;
-  top: 20px;
-  left: -20px;
+  animation-delay: 0.2s;
+  top: -20px;
+  left: 20px;
   background-color: #38c1fc;
 }
 .spinner--vi {
@@ -370,7 +366,7 @@ a:visited {
   height: 25px;
   border-radius: 50%;
   animation: load-spinner 3s both;
-  animation-delay: 0.1s;
+  animation-delay: 0.5s;
   top: 40px;
   left: 0px;
   background-color: #9356DC;
@@ -381,9 +377,9 @@ a:visited {
   height: 25px;
   border-radius: 50%;
   animation: load-spinner 3s both;
-  animation-delay: 0.2s;
-  top: 20px;
-  left: 20px;
+  animation-delay: 0.8s;
+  top: -20px;
+  left: -20px;
   background-color: #FF79DA;
 }
 .spinner--ve {
@@ -392,7 +388,7 @@ a:visited {
   height: 25px;
   border-radius: 50%;
   animation: load-spinner 3s both;
-  animation-delay: 0.3s;
+  animation-delay: 0.7s;
   top: 0px;
   left: -40px;
   background-color: #99E2D0;
@@ -403,9 +399,9 @@ a:visited {
   height: 25px;
   border-radius: 50%;
   animation: load-spinner 3s both;
-  animation-delay: 0.4s;
-  top: -20px;
-  left: 20px;
+  animation-delay: 0.6s;
+  top: 20px;
+  left: -20px;
   background-color: #38c1fc;
 }
 
