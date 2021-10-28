@@ -3,10 +3,16 @@
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    margin: 20px;
     animation: load-spinner 3s both;
     animation-delay: $delai;
     top: $top;
     left: $left;
     background-color: $couleur;
+}
+@mixin en-flex($orientation: row, $justify-content :normal, $align-items: normal, $wrap: nowrap){
+    display: flex;
+    flex-direction: $orientation;
+    justify-content: $justify-content;
+    flex-wrap: $wrap;
+    align-items: $align-items;
 }

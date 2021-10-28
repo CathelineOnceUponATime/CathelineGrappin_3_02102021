@@ -18,12 +18,10 @@ a{
     margin: 0px 10px;
 }
 .debut{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include en-flex(column, normal, center);
     text-align: center;
     &__lieu{
-        flex-direction: row;
+        @include en-flex(row, center, center);
         width: 100%;
         box-shadow: 0px -1px 0px 2px $couleur-fond-lieu-bordure;
         background-color: $couleur-fond-lieu;
@@ -36,8 +34,7 @@ a{
     }
 }
 .restaurant{
-    display : flex;
-    flex-direction: column;
+    @include en-flex(column);
     background-color: white;
     border-radius: 20px;
     box-shadow: 6px 6px 6px $couleur-fond-bordure;
@@ -58,17 +55,13 @@ a{
     }
     
     &__detail{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
+        @include en-flex(row, space-between, center);
         margin: 10px 20px 25px 20px;
         h3, p{
             margin: 0;
         }
         &__plat{
-            display: flex;
-            flex-direction: column;
+            @include en-flex(column);
         }
     }
     img{
@@ -85,10 +78,8 @@ a{
     }
 }
 .menu{
-    display: flex;
-    flex-direction: row;
+    @include en-flex(row, normal, center);
     text-align: center;
-    align-items: center;
     margin-bottom: 20px;
     span{
         background-color: $couleur-primaire;
@@ -99,10 +90,8 @@ a{
         left: 3px;
     }
     &__fond{
-        display: flex;
-        flex-direction: row;
+        @include en-flex(row, normal, center);
         text-align: center;
-        align-items: center;
         box-shadow: 6px 6px 6px $couleur-fond-bordure;
         background-color: $couleur-fond;
         border-radius: 15px;
@@ -146,8 +135,7 @@ a{
     }
 }
 .ensemble{
-    display: flex;
-    justify-content: center;
+    @include en-flex(row, center);
 }
 .apres-spinner{
     max-width: 1500px;
@@ -157,36 +145,34 @@ a{
     animation: apres-spinner 0ms 3s both;
 }
 .container--spinner{
+    @include en-flex(row, center, center);
     width: 100%;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .spinner{
     position: relative;
     &--violet{
-        @include spinner-boule($couleur-primaire, 0.1s, 0px, 40px);
+        @include spinner-boule($couleur-primaire, 0.1s, -40px, 0px);
     }
     &--rose{
-        @include spinner-boule($couleur-secondaire, 0.2s, 60px, 60px);
+        @include spinner-boule($couleur-secondaire, 0.2s, -20px, -20px);
     }
     &--vert{
-        @include spinner-boule($couleur-tertiaire, 0.3s, 40px, 80px);
+        @include spinner-boule($couleur-tertiaire, 0.3s, 0px, 40px);
     }
     &--bleu{
-        @include spinner-boule($couleur-bleu-clair, 0.4s, 20px, 60px);
+        @include spinner-boule($couleur-bleu-clair, 0.4s, 20px, -20px);
     }
     &--vi{
-        @include spinner-boule($couleur-primaire, 0.1s, 80px, 40px);
+        @include spinner-boule($couleur-primaire, 0.1s, 40px, 0px);
     }
     &--ro{
         @include spinner-boule($couleur-secondaire, 0.2s, 20px, 20px);
     }
     &--ve{
-        @include spinner-boule($couleur-tertiaire, 0.3s, 40px, 0px);
+        @include spinner-boule($couleur-tertiaire, 0.3s, 0px, -40px);
     }
     &--bl{
-        @include spinner-boule($couleur-bleu-clair, 0.4s, 60px, 20px);
+        @include spinner-boule($couleur-bleu-clair, 0.4s, -20px, 20px);
     }
 }

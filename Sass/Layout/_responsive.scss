@@ -1,15 +1,10 @@
 @media (min-width: 576px)
 {
     .restaurants{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
+        @include en-flex(row, space-around, normal, wrap);
     }
     ul{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        @include en-flex(row, space-between);
     }
     .heart + label {
         margin-right: -20px;
@@ -21,10 +16,7 @@
         }
     }
     .R-articles{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        @include en-flex(row, space-between, normal, wrap);
         margin-right: 20px;
         .R-article{
             width: 45%;
@@ -35,10 +27,7 @@
         width: 7%;
     }
     .les-menus{
-        display: flex;
-        flex-direction: row;   
-        justify-content: space-around; 
-        flex-wrap: wrap;
+        @include en-flex(row, space-around, normal, wrap);
         width: 100%;
         .menu{
             
@@ -55,17 +44,12 @@
     
     
     .R-ensemble-sections{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+        @include en-flex(row, space-around);
         .R-sections{
             width: 100%;
         }
         .R-articles{
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            flex-wrap: wrap;
+            @include en-flex(column, space-around, normal, wrap);
             width: 100%;
             .R-article{
                 width: 100%;

@@ -1,11 +1,8 @@
 .R-haut{
     position: relative;
     .R-restaurant-nom{
-        display: flex;
-        flex-direction: row;
+        @include en-flex(row, space-between, center);
         text-align: center;
-        align-items: center;
-        justify-content: space-between;
         border-radius: 150px;
         background-color: $couleur-fond;
         position: absolute;
@@ -26,8 +23,7 @@
     object-fit: cover;
 }
 article{
-    display: flex;
-    flex-direction: column;
+    @include en-flex(column);
     box-shadow: 6px 6px 6px $couleur-fond-bordure;
     background-color: white;
     border-radius: 20px;
@@ -37,9 +33,7 @@ article{
         margin: 0px 0px 10px 10px;
     }
     .R-detail-menu{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        @include en-flex(row, space-between);
         &--coupe{
             white-space: nowrap;
             overflow: hidden;
@@ -81,10 +75,7 @@ article{
     animation: apparition 5s forwards 1s;
 }
 .R-article{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    @include en-flex(row, space-between, center);
     padding-top: 0px;
     position: relative;
     width: 100%;
@@ -99,7 +90,7 @@ article{
             width: 20%;
             .fa-check{
                 animation-name: anim-rotation;
-                animation-delay: 0.1s;
+                animation-delay: 0.2s;
                 animation-duration: 0.5s;
                 animation-fill-mode: forwards;
             }
@@ -107,13 +98,11 @@ article{
     }
 }
 .R-detail-coche{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include en-flex(row, center, center);
     width: 0%;
     height: 61px;
     background-color: $couleur-tertiaire;
-    border-radius: 0px 10px 10px 0px;
+    border-radius: 0px 20px 20px 0px;
     overflow: hidden;
     transition: width 0.5s ease-in-out;
     .fa-check{

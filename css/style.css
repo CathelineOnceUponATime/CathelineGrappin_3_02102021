@@ -145,11 +145,17 @@ a:visited {
 .debut {
   display: flex;
   flex-direction: column;
+  justify-content: normal;
+  flex-wrap: nowrap;
   align-items: center;
   text-align: center;
 }
 .debut__lieu {
+  display: flex;
   flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
   width: 100%;
   box-shadow: 0px -1px 0px 2px #D3D3D3;
   background-color: #EAEAEA;
@@ -164,6 +170,9 @@ a:visited {
 .restaurant {
   display: flex;
   flex-direction: column;
+  justify-content: normal;
+  flex-wrap: nowrap;
+  align-items: normal;
   background-color: white;
   border-radius: 20px;
   box-shadow: 6px 6px 6px #E0E0E0;
@@ -186,8 +195,9 @@ a:visited {
 .restaurant__detail {
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
   margin: 10px 20px 25px 20px;
 }
 .restaurant__detail h3, .restaurant__detail p {
@@ -196,6 +206,9 @@ a:visited {
 .restaurant__detail__plat {
   display: flex;
   flex-direction: column;
+  justify-content: normal;
+  flex-wrap: nowrap;
+  align-items: normal;
 }
 .restaurant img {
   height: 175px;
@@ -214,8 +227,10 @@ a:visited {
 .menu {
   display: flex;
   flex-direction: row;
-  text-align: center;
+  justify-content: normal;
+  flex-wrap: nowrap;
   align-items: center;
+  text-align: center;
   margin-bottom: 20px;
 }
 .menu span {
@@ -229,8 +244,10 @@ a:visited {
 .menu__fond {
   display: flex;
   flex-direction: row;
-  text-align: center;
+  justify-content: normal;
+  flex-wrap: nowrap;
   align-items: center;
+  text-align: center;
   box-shadow: 6px 6px 6px #E0E0E0;
   background-color: #F6F6F6;
   border-radius: 15px;
@@ -276,7 +293,10 @@ a:visited {
 
 .ensemble {
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  flex-wrap: nowrap;
+  align-items: normal;
 }
 
 .apres-spinner {
@@ -288,11 +308,13 @@ a:visited {
 }
 
 .container--spinner {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
   width: 100%;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .spinner {
@@ -303,11 +325,10 @@ a:visited {
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  margin: 20px;
   animation: load-spinner 3s both;
   animation-delay: 0.1s;
-  top: 0px;
-  left: 40px;
+  top: -40px;
+  left: 0px;
   background-color: #9356DC;
 }
 .spinner--rose {
@@ -315,11 +336,10 @@ a:visited {
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  margin: 20px;
   animation: load-spinner 3s both;
   animation-delay: 0.2s;
-  top: 60px;
-  left: 60px;
+  top: -20px;
+  left: -20px;
   background-color: #FF79DA;
 }
 .spinner--vert {
@@ -327,11 +347,10 @@ a:visited {
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  margin: 20px;
   animation: load-spinner 3s both;
   animation-delay: 0.3s;
-  top: 40px;
-  left: 80px;
+  top: 0px;
+  left: 40px;
   background-color: #99E2D0;
 }
 .spinner--bleu {
@@ -339,11 +358,10 @@ a:visited {
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  margin: 20px;
   animation: load-spinner 3s both;
   animation-delay: 0.4s;
   top: 20px;
-  left: 60px;
+  left: -20px;
   background-color: #38c1fc;
 }
 .spinner--vi {
@@ -351,11 +369,10 @@ a:visited {
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  margin: 20px;
   animation: load-spinner 3s both;
   animation-delay: 0.1s;
-  top: 80px;
-  left: 40px;
+  top: 40px;
+  left: 0px;
   background-color: #9356DC;
 }
 .spinner--ro {
@@ -363,7 +380,6 @@ a:visited {
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  margin: 20px;
   animation: load-spinner 3s both;
   animation-delay: 0.2s;
   top: 20px;
@@ -375,11 +391,10 @@ a:visited {
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  margin: 20px;
   animation: load-spinner 3s both;
   animation-delay: 0.3s;
-  top: 40px;
-  left: 0px;
+  top: 0px;
+  left: -40px;
   background-color: #99E2D0;
 }
 .spinner--bl {
@@ -387,10 +402,9 @@ a:visited {
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  margin: 20px;
   animation: load-spinner 3s both;
   animation-delay: 0.4s;
-  top: 60px;
+  top: -20px;
   left: 20px;
   background-color: #38c1fc;
 }
@@ -401,9 +415,10 @@ a:visited {
 .R-haut .R-restaurant-nom {
   display: flex;
   flex-direction: row;
-  text-align: center;
-  align-items: center;
   justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+  text-align: center;
   border-radius: 150px;
   background-color: #F6F6F6;
   position: absolute;
@@ -427,6 +442,9 @@ a:visited {
 article {
   display: flex;
   flex-direction: column;
+  justify-content: normal;
+  flex-wrap: nowrap;
+  align-items: normal;
   box-shadow: 6px 6px 6px #E0E0E0;
   background-color: white;
   border-radius: 20px;
@@ -440,6 +458,8 @@ article .R-detail-menu {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: normal;
 }
 article .R-detail-menu--coupe {
   white-space: nowrap;
@@ -488,6 +508,7 @@ article .R-detail-menu--prix {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: nowrap;
   align-items: center;
   padding-top: 0px;
   position: relative;
@@ -504,19 +525,21 @@ article .R-detail-menu--prix {
 }
 .R-article:hover .R-detail-coche .fa-check {
   animation-name: anim-rotation;
-  animation-delay: 0.1s;
+  animation-delay: 0.2s;
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
 }
 
 .R-detail-coche {
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  flex-wrap: nowrap;
   align-items: center;
   width: 0%;
   height: 61px;
   background-color: #99E2D0;
-  border-radius: 0px 10px 10px 0px;
+  border-radius: 0px 20px 20px 0px;
   overflow: hidden;
   transition: width 0.5s ease-in-out;
 }
@@ -531,14 +554,17 @@ article .R-detail-menu--prix {
   .restaurants {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: normal;
   }
 
   ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: normal;
   }
 
   .heart + label {
@@ -553,8 +579,9 @@ article .R-detail-menu--prix {
   .R-articles {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: normal;
     margin-right: 20px;
   }
   .R-articles .R-article {
@@ -571,6 +598,7 @@ article .R-detail-menu--prix {
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
+    align-items: normal;
     width: 100%;
   }
   .les-menus .menu span {
@@ -583,6 +611,8 @@ article .R-detail-menu--prix {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: nowrap;
+    align-items: normal;
   }
   .R-ensemble-sections .R-sections {
     width: 100%;
@@ -592,6 +622,7 @@ article .R-detail-menu--prix {
     flex-direction: column;
     justify-content: space-around;
     flex-wrap: wrap;
+    align-items: normal;
     width: 100%;
   }
   .R-ensemble-sections .R-articles .R-article {
