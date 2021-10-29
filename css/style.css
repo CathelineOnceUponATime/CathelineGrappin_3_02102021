@@ -298,6 +298,7 @@ a:visited {
 
 .apres-spinner {
   max-width: 1500px;
+  min-width: 355px;
   position: absolute;
   top: 0px;
   width: 100%;
@@ -470,6 +471,7 @@ article .R-detail-menu--prix {
 
 .ensemble--restaurants {
   max-width: 1500px;
+  min-width: 355px;
   width: 100%;
 }
 
