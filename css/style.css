@@ -54,6 +54,7 @@ button {
   padding: 15px;
   border: none;
   color: white;
+  box-shadow: 6px 6px 6px #E0E0E0;
 }
 button:hover {
   filter: brightness(115%);

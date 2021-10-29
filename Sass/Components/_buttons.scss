@@ -4,6 +4,7 @@ button{
     padding: 15px;
     border: none;
     color: white;
+    box-shadow: 6px 6px 6px $couleur-fond-bordure;
     &:hover{
         filter: brightness(115%);
         box-shadow: 6px 5px 20px $couleur-secondaire;
