@@ -20,8 +20,6 @@ https://cathelineonceuponatime.github.io/CathelineGrappin_3_02102021/
 
 ![maquette-accueil](https://github.com/CathelineOnceUponATime/CathelineGrappin_3_02102021/blob/main/images/maquettes/Accueil.png?raw=true)
 ![maquette-restaurant](https://github.com/CathelineOnceUponATime/CathelineGrappin_3_02102021/blob/main/images/maquettes/Menu%20-%20La%20note%20enchant%C3%A9e.png?raw=true)
-https://github.com/CathelineOnceUponATime/CathelineGrappin_3_02102021/blob/main/images/maquettes/Animations/Animation%20-%20Page%20Menu%20-%20Apparition%20progressive.mp4
-https://github.com/CathelineOnceUponATime/CathelineGrappin_3_02102021/blob/main/images/maquettes/Animations/Animation%20-%20Page%20Menu%20-%20S%C3%A9lection%20d_un%20plat.mp4
 
 ## Installation
 
