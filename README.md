@@ -30,7 +30,7 @@ https://cathelineonceuponatime.github.io/CathelineGrappin_3_02102021/
 
 - VSCode
 
-### Installing and launching Reservia
+### Installing and launching OhMyFood
 
 Clone the repository of OhMyFood :
 
