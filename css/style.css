@@ -118,11 +118,11 @@ ul li .fas {
 }
 
 .Shrikhand {
-  font-family: "Shrikhand", "sans serif";
+  font-family: 'Shrikhand', Arial, sans-serif;
 }
 
 body {
-  font-family: "Roboto", "Comic sans ms";
+  font-family: 'Roboto', 'Comic sans ms', Arial, sans-serif;
   background-color: #F6F6F6;
   margin: 0;
 }
