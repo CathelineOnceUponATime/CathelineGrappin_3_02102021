@@ -487,9 +487,6 @@ article .R-detail-menu--prix {
 
 .R-sections {
   margin: 0px 10px;
-}
-
-.R-sections {
   opacity: 0;
   animation: apparition 5s forwards 1s;
 }
