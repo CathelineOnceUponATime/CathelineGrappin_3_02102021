@@ -1,4 +1,4 @@
-![logo-du-projet](https://github.com/CathelineOnceUponATime/CathelineGrappin_3_02102021/blob/main/images/logo/ohmyfood.png?raw=true)
+![logo-du-projet](https://github.com/CathelineOnceUponATime/CathelineGrappin_3_02102021/blob/main/images/logo/ohmyfood%20fond%20blanc.png)
 
 # OhMyFood
 > Projet 3 - Dynamisez une page web avec des animations CSS
